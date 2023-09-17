@@ -1,8 +1,8 @@
-#include <glut.h>
+#include "glut3.7.6/glut.h"
 //#include <gl/GL.h>
 //#include <GL/gl.h>
 //#include <GL/glu.h>
-
+//#pragma comment(lib, "glut32.lib")
 
 //for convenience
 typedef float point[2];
@@ -111,7 +111,7 @@ void ChangeSize(GLsizei horizontal, GLsizei vertical) {
 }
 int main(int argc, char** argv) {
 	glutInit(&argc, argv);
-	glutCreateWindow("Ковер Серпинского. РГР Арефьев К.Б");
+	glutCreateWindow("Sierpinski Fractal. Kronos");
 	//Screen display
 	glutDisplayFunc(RenderScene);
 	//When resizing the window
